@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me - Saad's Portfolio</title>
+    <title>About Me - Saad's Portfolio</title>
     <!-- link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- link to external JavaScript for video control, defer to load after html -->
     <script src="video.js" defer></script>
 </head>
+
 <body>
     <!-- Header: Title and Main navigation -->
     <header>
@@ -16,38 +18,34 @@
         <h1>About me</h1>
         <!-- Navigation section: links separated by pipe characters -->
         <nav>
-            <a href="Home_page.html">Home</a> | <a href="about_me.html">About Me</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact Me</a>
+            <a href="Home_page.html">Home</a> | <a href="about_me.html">About Me</a> | <a
+                href="projects.html">Projects</a> | <a href="contact.html">Contact Me</a>
         </nav>
     </header>
     <!-- main content area -->
     <main>
         <section>
-            <!-- Article: Personal photo and introduction text -->
-            <article>
-                <!-- Photo with alt text for accessibility -->
-            <img src="About_me_Picture.JPG" alt="Photo of Saad" width="300px">
+            <h2>Who am I?</h2>
+            <!-- Photo with alt text for accessibility -->
+            <img src="About_me_Picture.JPG" alt="Photo of Saad" width="300">
             <p>
-                Hello, my name is Saad, and I'm currently majoring in Networking and IT Security. Within the field I am passionate about Cybersecurity and currently developing my skills and interest in Web Developement and Kali Linux. This portfolio showcases the projects and skills I have developed during my studies. Thank you for visiting my site-please feel free to explore my work and contact me if you have any questions.
+                Hello, my name is Saad, and I'm currently majoring in Networking and IT Security. Within the field I
+                am passionate about Cybersecurity and currently developing my skills and interest in Web
+                Developement and Kali Linux. This portfolio showcases the projects and skills I have developed
+                during my studies. Thank you for visiting my site-please feel free to explore my work and contact me
+                if you have any questions.
             </p>
-            </article>
             <!-- Aside: video with controls and additional play/pause button -->
             <aside>
-                <video 
-                    id="video"
-                    controls
-                    width="320" height="240"
-                    autoplay muted
-                    loop
-                    poster="Network.jpg"
+                <video id="video" controls width="320" height="240" autoplay muted loop poster="Network.jpg"
                     preload="auto">
                     <source src="Web_video.mp4" type="video/mp4">
                     <source src="Web_video.ogv" type="video/ogv">
                 </video>
-            <!-- line break for spacing -->
-            <br>
-            <!-- Button to toggle play/pause controlled by external JavaScript -->
-            <button onclick="playPause()">Play or Pause the video</button>
-            </br>
+                <!-- line break for spacing -->
+                <br>
+                <!-- Button to toggle play/pause controlled by external JavaScript -->
+                <button onclick="playPause()">Play or Pause the video</button>
             </aside>
         </section>
     </main>
@@ -59,4 +57,5 @@
         <p>&copy; 2025 Saad Nav. All rights reserved</p>
     </footer>
 </body>
+
 </html>
