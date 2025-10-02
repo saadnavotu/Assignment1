@@ -16,12 +16,16 @@ body {
     border-radius: 12px;
 }
 
-header, footer {
+header {
     background-color: darkgreen;
-    color: #333333;
+    color: black;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
+}
+
+footer {
+    color: white;
 }
 
 nav {
@@ -88,7 +92,7 @@ label {
 
 input, textarea {
     color: #333333;
-    background-color: black;
+    background-color: white;
 }
 
 .submit-button {

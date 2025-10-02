@@ -15,12 +15,16 @@ body {
     border-radius: 8px;
 }
 
-header, footer {
+header {
     background-color: darkmagenta;
-    color: #333333;
+    color: black;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 8px;
+}
+
+footer {
+    color: white;
 }
 
 nav {
