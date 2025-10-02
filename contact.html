@@ -1,4 +1,5 @@
 <!-- declares document type (HTML5) -->
+<!-- Linear gradient and angle linear gradient will be used on this page -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,56 +11,64 @@
     <!-- title of page -->
     <title>Contact Me - Saad's Portfolio</title>
     <!-- external link to css file -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="laptop.css" media="only screen and (min-width:960px)">
+    <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <link rel="stylesheet" type="text/css" href="phone.css" media="only screen and (max-width:480px)">
 </head>
 
 <body>
-    <header>
+    <div id="wrapper">
+        <header>
 
-        <div id="wrapper">
-            <h1>Contact Me</h1>
-
-            <!-- Contact form (uses mailto: which opens the user's email client) -->
-            <form action="mailto:saad.nav@ontariotechu.net?subject=Contact%20Me" enctype="text/plain" method="post"
-                name="Contact Form">
-                <!-- Name field -->
-                <p>
-                    <label for="Fullname">Full Name :</label>
-                    <input type="text" id="Fullname" name="name" size="40" placeholder="Enter your full name" required>
-                </p>
-                <!-- Email field -->
-                <p>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" size="40" placeholder="Enter your email address" required>
-                </p>
-                <!-- Cell number field -->
-                <p>
-                    <label for="cell">Cell Number # :</label>
-                    <input type="tel" id="cell" name="cell" placeholder="Enter your cell number" required>
-                </p>
-                <!-- comments textarea -->
-                <p>
-                    <label for="questions">Comments :</label>
-                    <textarea id="questions" name="questions" cols="60" rows="8"
-                        placeholder="Any Questions or Concerns? Please let me know here."></textarea>
-                </p>
-                <!-- simple math captcha -->
-                <h2>Captcha</h2>
-                <p>
-                    <input type="number" id="a" name="a" value="0"> + <input type="number" id="b" name="b" value="0"> =
-                    <output name="x" for="a b"></output>
-                </p>
-                <!-- submit button -->
-                <br>
-                <input type="submit" value="Submit">
-            </form><br>
-        </div>
-    </header>
-    <!-- footer with contact info and copyright notice -->
-    <footer>
-        <address>Email: saad.nav@ontariotechu.net</address>
-        <p>&copy; 2025 Saad Nav. All rights reserved</p>
-    </footer>
+            <div class="contact-main">
+                <h1>Contact Me</h1>
+                <!-- Contact form (uses mailto: which opens the user's email client) -->
+                <form action="mailto:saad.nav@ontariotechu.net?subject=Contact%20Me" enctype="text/plain" method="post"
+                    name="Contact Form">
+                    <!-- Name field -->
+                    <p>
+                        <label for="Fullname">Full Name :</label>
+                        <input type="text" id="Fullname" name="name" size="40" placeholder="Enter your full name"
+                            required>
+                    </p>
+                    <!-- Email field -->
+                    <p>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" size="40" placeholder="Enter your email address"
+                            required>
+                    </p>
+                    <!-- Cell number field -->
+                    <p>
+                        <label for="cell">Cell Number # :</label>
+                        <input type="tel" id="cell" name="cell" placeholder="Enter your cell number" required>
+                    </p>
+                    <!-- comments textarea -->
+                    <p>
+                        <label for="questions">Comments :</label>
+                        <textarea id="questions" name="questions" cols="60" rows="8"
+                            placeholder="Any Questions or Concerns? Please let me know here."></textarea>
+                    </p>
+                    <!-- simple math captcha -->
+                    <h2>Captcha</h2>
+                    <p>
+                        <input type="number" id="a" name="a" value="0"> + <input type="number" id="b" name="b"
+                            value="0"> =
+                        <output name="x" for="a b"></output>
+                    </p>
+                    <!-- submit button -->
+                    <br>
+                    <!-- added specific class for easier styling in css files -->
+                    <input type="submit" value="Submit" class="submit-button">
+                </form><br>
+            </div>
+        </header>
+        <!-- footer with contact info and copyright notice -->
+        <footer>
+            <address>Email: saad.nav@ontariotechu.net</address>
+            <p>&copy; 2025 Saad Nav. All rights reserved</p>
+        </footer>
+    </div>
 </body>
 
 </html>
