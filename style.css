@@ -4,43 +4,49 @@
 /* my adobe color combination */
 /* #FFF461 (yellow) , #DEAE54 (gold), #F59169 (peach-orange) , #DE548B (pink) , #C06DFA (purple) */
 
+/* base body styles: background, font, text color, and remove default margin/padding */
 body {
-    background-color: #c4bc45;
+    background-color: yellow;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #333333;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
+/* add left margin to all headings, paragraphs for consistent spacing */
+h1, h2, h3, h4, h5, h6, p {
     margin-left: 15px;
 }
 
+/* navigation bar spacing */
 nav {
     margin-left: 15px;
     margin-bottom: 10px;
 }
 
+/* style navigation links with color remove underline and add spacing */
 /* selects all anchor elements that are within <nav> element */
 nav a {
     color: #DE548B;
     text-decoration: none;
-    font-weight: bold;
     padding: 0 5px;
 }
 
+/* change nav link color, underline on hover for interactivity */
 nav a:hover {
     color: #C06DFA;
     text-decoration: underline;
 }
 
+/* header styles: background color, text color, vertical padding */
 header {
     background-color: #DEAE54;
-    color: #DEAE54;
+    color: red;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/* footer styles: background color, text color, vertical padding, aligned text to the left */
 footer {
     background-color: #DEAE54;
     color: #333333;
@@ -49,6 +55,7 @@ footer {
     text-align: left;
 }
 
+/* sidebar styling: background, float right on desktop, width, margin, padding, text color */
 aside {
     background-color: #f59169;
     float: right;
@@ -58,6 +65,7 @@ aside {
     color: #333333;
 }
 
+/* article and section styles: background, text color, margin, padding, rounded corners */
 article, section {
     background-color: #FFF461;
     color: #333333;
@@ -66,7 +74,7 @@ article, section {
     border-radius: 8px;
 }
 
-/* linear gradient just for the contact page */
+/* custom gradient from mozilla colors specifically for the contact page main section */
 .contact-main {
     background: -moz-linear-gradient(to right, #FFF461 0%,#DEAE54 50%,#f59169 100%);
     background: -webkit-linear-gradient(to right, #FFF461 0%,#DEAE54 50%,#f59169 100%);
@@ -75,23 +83,29 @@ article, section {
     padding: 24px;
     border-radius: 12px;
 }
+
+/* form container: center, max width, padding, background, rounder corners, subtle shadow */
 form {
     margin: 15px auto;
     max-width: 500px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 8px #c06dfa44;
+    box-shadow: 0 0 8px black;
 }
+/* label styling: dark text for clarity */
 label {
-    font-weight: bold;
-    color: #333333;
+    color: black;
 }
+
+/* input and textarea fields: text color and background for readability */
 input, textarea {
     color: #333333;
     background-color: #FFF461;
 }
-input[type="submit"] {
+
+/* submit button: background color, text color, no border, padding, rounded corners, margin */
+.submit-button {
     background-color: #DE548B;
     color: white;
     border: none;
@@ -99,6 +113,8 @@ input[type="submit"] {
     border-radius: 6px;
     margin-top: 10px;
 }
-input[type="submit"]:hover {
+
+/* submit button hover effect: change background color for feedback */
+.submit-button:hover {
     background-color: #C06DFA;
 }
