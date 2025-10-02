@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}   
+
+#wrapper {
+    width: 100%;
+    margin: 0;
+    background-color: darkcyan;
+    border-radius: 8px;
+}
+
+header, footer {
+    background-color: darkmagenta;
+    color: #333333;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+
+nav {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 3px 0;
+}
+
+nav a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+main, section, article {
+    background-color: lightseagreen;
+    margin: 7px;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+aside {
+    background-color: yellow;
+    float: none;
+    width: 95%;
+    margin: 8px auto;
+    padding: 8px;
+    border-radius: 8px;
+    display: block;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.contact-main {
+     background: -moz-linear-gradient(to right, #FFF461 0%,#DEAE54 50%,#f59169 100%);
+    background: -webkit-linear-gradient(to right, #FFF461 0%,#DEAE54 50%,#f59169 100%);
+    background: -o-linear-gradient(to right, #FFF461 0%,#DEAE54 50%,#f59169 100%);
+    background: linear-gradient(to right, #FFF461 0%,#DEAE54 50%,#f59169 100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form {
+    margin: 8px auto;
+    width: 95%;
+    max-width: 290px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+label {
+    color: #333333;
+}
+
+input, textarea {
+    color: #333333;
+    background-color: lightgray;
+}
+
+.submit-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: black;
+}
+
+footer {
+    text-align: left;
+}
