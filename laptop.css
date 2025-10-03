@@ -53,6 +53,7 @@ main, section, article {
 
 aside {
     background-color: blue;
+    color: white;
     float: right;
     width: 300px;
     margin: 5px;
