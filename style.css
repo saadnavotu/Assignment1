@@ -65,6 +65,10 @@ aside {
     color: white;
 }
 
+time {
+    color: white;
+}
+
 /* article and section styles: background, text color, margin, padding, rounded corners */
 article, section {
     background-color: #FFF461;
